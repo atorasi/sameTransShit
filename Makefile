@@ -1,10 +1,10 @@
 .PHONY: run
 run:
-	go run ./cmd/dna
+	go run ./cmd/sametrans
 
 .PHONY: build
 build: 
-	go build -o ./build/DNA -v ./cmd/dna
+	go build -o ./build/SameTrans -v ./cmd/sametrans
 
 .SILENT:
 .DEFAULT_GOAL := run

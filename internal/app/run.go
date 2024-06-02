@@ -2,6 +2,7 @@ package app
 
 import (
 	"encoding/hex"
+	"fmt"
 	"math/big"
 	"sameTrans/internal/configs"
 	"sameTrans/internal/constants"
@@ -23,6 +24,7 @@ func Run(client *ethclient.Client, wallet configs.Wallet) error {
 	if err != nil {
 		return err
 	}
+	fmt.Printf("%s | %s%s\n", wallet.Address, constants.SETTINGS.SCAN, txHash.Hex())
 
 	return nil
 }

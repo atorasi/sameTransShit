@@ -5,6 +5,18 @@ go 1.21.6
 require github.com/ethereum/go-ethereum v1.14.3
 
 require (
+	github.com/andybalholm/brotli v1.0.5 // indirect
+	github.com/cloudflare/circl v1.3.3 // indirect
+	github.com/gaukas/godicttls v0.0.4 // indirect
+	github.com/klauspost/compress v1.16.7 // indirect
+	github.com/quic-go/quic-go v0.37.4 // indirect
+	github.com/refraction-networking/utls v1.5.4 // indirect
+	golang.org/x/net v0.24.0 // indirect
+	golang.org/x/text v0.14.0 // indirect
+)
+
+require (
+	github.com/Danny-Dasilva/fhttp v0.0.0-20240217042913-eeeb0b347ce1
 	github.com/Microsoft/go-winio v0.6.1 // indirect
 	github.com/StackExchange/wmi v1.2.1 // indirect
 	github.com/bits-and-blooms/bitset v1.10.0 // indirect

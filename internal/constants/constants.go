@@ -15,6 +15,7 @@ type UserConfig struct {
 	RPC                     string  `yaml:"RPC"`
 	SLEEPBETWEENACCOUNTWORK []int   `yaml:"SLEEP_BETWEEN_ACCOUNT_WORK"`
 	WORKERSCOUNT            int     `yaml:"WORKERS_COUNT"`
+	SCAN                    string  `yaml:"SCAN"`
 }
 
 func ReadSettings(filepath string) UserConfig {

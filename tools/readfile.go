@@ -2,8 +2,8 @@ package tools
 
 import (
 	"bufio"
-	"dna/internal/configs"
 	"os"
+	"sameTrans/internal/configs"
 
 	"github.com/ethereum/go-ethereum/crypto"
 )
