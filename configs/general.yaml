@@ -1,0 +1,20 @@
+# Contract address
+CONTRACT: "0x4163dfa9ee4a25e950ce1a0a2221fafa29fe2df6"
+
+# Tx input data (example: 0xe9e05c42)
+INPUT_DATA: "0x"
+
+# tx value (float || int, not wei/gwei)
+VALUE: 0.00001
+
+# RPC
+RPC: "https://gateway.tenderly.co/public/base"
+
+SCAN: "https://basescan.org/tx/"
+
+
+# true || false
+NEED_DELAYS: true
+
+# Range of sleep between account work (in seconds)
+SLEEP_BETWEEN_ACCOUNT_WORK: [1, 3]

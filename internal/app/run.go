@@ -11,11 +11,11 @@ import (
 	"github.com/ethereum/go-ethereum/ethclient"
 )
 
-func Run(client *ethclient.Client, wallet configs.Wallet) error {
+func Start(client *ethclient.Client, wallet configs.Wallet) error {
 	calldata, _ := hex.DecodeString(constants.SETTINGS.INPUTDATA)
 
 	txData := transaction.TransactionData{
-		Value:    big.NewInt(constants.SETTINGS.VALUE),
+		Value:    big.NewInt(int64(constants.SETTINGS.VALUE * 1e18)),
 		Contract: constants.SETTINGS.CONTRACT,
 		Calldata: calldata,
 	}
